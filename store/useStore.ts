@@ -57,7 +57,7 @@ export const useStore = create<WalletState>()(
         if (usuarioEncontrado) {
           const sedeInicial: Sede | 'todos' = usuarioEncontrado.sedesPermitidas === 'todas' ? 'todos' : usuarioEncontrado.sedesPermitidas[0];
           set({ usuarioActual: usuarioEncontrado, sedeActiva: sedeInicial });
-          get().cargarTransacciones(); // Cargar datos al iniciar sesión
+          get().cargarTransacciones(); 
           return true;
         }
         return false;
@@ -92,7 +92,6 @@ export const useStore = create<WalletState>()(
           sedeDestino = usuarioActual.sedesPermitidas[0];
         }
 
-        // Generador de ID único compatible con cualquier entorno
         const idUnico = Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
 
         const transaccionParaGuardar = {
