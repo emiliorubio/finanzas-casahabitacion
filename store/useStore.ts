@@ -120,12 +120,12 @@ export const useStore = create<WalletState>()(
       eliminarTransaccion: async (id) => {
         const { error } = await supabase
           .from('transacciones')
-          .insert([transaccionParaGuardar]);
+          .delete()
+          .eq('id', id);
 
         if (error) {
-          // AQUÍ CAMBIAMOS PARA VER EL ERROR REAL:
-          console.error('Error detallado de Supabase:', JSON.stringify(error, null, 2));
-          alert(`Error al guardar: ${error.message || 'Revisa la consola'}`);
+          console.error('Error al eliminar en Supabase:', error);
+          alert('Hubo un error al eliminar la transacción de la base de datos.');
         } else {
           await get().cargarTransacciones();
         }
