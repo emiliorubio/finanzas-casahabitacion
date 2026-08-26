@@ -29,7 +29,7 @@ export default function Home() {
       <header className="py-2 flex justify-between items-center border-b border-gray-200 pb-4 mb-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full overflow-hidden border border-orange-500 shadow-sm">
-            <img src="/logo.jpeg" alt="Logo" className="w-full h-full object-cover" />
+            <img src="/public/logo.png" alt="Logo" className="w-full h-full object-cover" />
           </div>
           <div>
             <h1 className="text-sm font-bold text-gray-800 leading-tight">Casa Habitación</h1>
