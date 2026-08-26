@@ -24,7 +24,7 @@ export default function LoginScreen() {
         
         {/* Logo de la Iglesia */}
         <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-orange-500 shadow-md">
-          <img src="/logo.jpeg" alt="Casa Habitación" className="w-full h-full object-cover" />
+          <img src="/logo.png" alt="Casa Habitación" className="w-full h-full object-cover" />
         </div>
 
         <h1 className="text-xl font-bold tracking-tight text-center mb-1">Casa Habitación</h1>
