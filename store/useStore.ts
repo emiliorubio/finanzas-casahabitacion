@@ -39,7 +39,7 @@ interface WalletState {
 
 const usuariosDisponibles: Usuario[] = [
   { id: '1', nombre: 'Admin1', clave: '1234', sedesPermitidas: 'todas' },
-  { id: '2', nombre: 'usuario Rancagua', clave: '4321', sedesPermitidas: ['rancagua'] },
+  { id: '2', nombre: 'Rancagua', clave: '4321', sedesPermitidas: ['rancagua'] },
 ];
 
 export const useStore = create<WalletState>()(

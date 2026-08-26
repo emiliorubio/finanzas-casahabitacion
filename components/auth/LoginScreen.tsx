@@ -27,7 +27,7 @@ export default function LoginScreen() {
           <img src="/logo.png" alt="Casa Habitación" className="w-full h-full object-cover" />
         </div>
 
-        <h1 className="text-xl font-bold tracking-tight text-center mb-1">Casa Habitación</h1>
+        <h1 className="text-xl font-bold tracking-tight text-center mb-1">Iglesia Habitación</h1>
         <p className="text-xs text-orange-400 font-medium mb-6 uppercase tracking-widest">Sistema Financiero</p>
 
         <form onSubmit={handleSubmit} className="w-full flex flex-col gap-4">
@@ -72,12 +72,6 @@ export default function LoginScreen() {
             Ingresar al Sistema
           </button>
         </form>
-
-        <div className="mt-6 text-center text-xs text-gray-500">
-          <p>Credenciales de prueba sugeridas:</p>
-          <p className="text-gray-400 mt-1">Admin: <span className="text-orange-300">Admin1</span> / Clave: <span className="text-orange-300">1234</span></p>
-          <p className="text-gray-400">Rancagua: <span className="text-orange-300">Rancagua</span> / Clave: <span className="text-orange-300">4321</span></p>
-        </div>
       </div>
     </div>
   );

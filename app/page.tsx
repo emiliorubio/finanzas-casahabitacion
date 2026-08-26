@@ -32,7 +32,7 @@ export default function Home() {
             <img src="/logo.png" alt="logo" className="w-full h-full object-cover" />
           </div>
           <div>
-            <h1 className="text-sm font-bold text-gray-800 leading-tight">Casa Habitación</h1>
+            <h1 className="text-sm font-bold text-gray-800 leading-tight">Iglesia Habitación</h1>
             <p className="text-[10px] text-gray-500 font-medium">Hola, {usuarioActual.nombre}</p>
           </div>
         </div>
