@@ -34,7 +34,6 @@ export default function AddTransactionModal({ isOpen, onClose }: Props) {
     const mesCalculado = mesesNombres[numeroMes] || mesActual;
 
     agregarTransaccion({
-      id: Date.now().toString(),
       fecha,
       mes: mesCalculado,
       descripcion,
