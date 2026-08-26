@@ -33,7 +33,7 @@ interface WalletState {
   setSedeActiva: (sede: Sede | 'todos') => void;
   setMesActual: (mes: string) => void;
   cargarTransacciones: () => Promise<void>;
-  agregarTransaccion: (transaccion: Omit<Transaccion, 'id' | 'sede'>) => Promise<void>;
+  agregarTransaccion: (transaccion: { fecha: string; mes: string; descripcion: string; monto: number; tipo: Categoria }) => Promise<void>;
   eliminarTransaccion: (id: string) => Promise<void>;
 }
 
@@ -92,7 +92,7 @@ export const useStore = create<WalletState>()(
           sedeDestino = usuarioActual.sedesPermitidas[0];
         }
 
-        // Generador compatible con cualquier entorno
+        // Generador de ID único compatible con cualquier entorno
         const idUnico = Math.random().toString(36).substring(2, 9) + Date.now().toString(36);
 
         const transaccionParaGuardar = {
