@@ -22,7 +22,7 @@ export default function BalanceCard() {
     .reduce((acc, curr) => acc + curr.monto, 0);
 
   const saldoTotal = totalIngresos - totalGastos;
-  const labelSede = sedeActiva === 'todos' ? 'Consolidado General' : `Iglesia Casa Habitación ${sedeActiva}`;
+  const labelSede = sedeActiva === 'todos' ? 'Consolidado General' : `Iglesia Habitación ${sedeActiva}`;
 
   return (
     <div className="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-6 rounded-3xl shadow-xl border border-gray-700 mt-2">
